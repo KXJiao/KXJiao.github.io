@@ -28,7 +28,7 @@ export default function Layout({ children, home }) {
         {home ? (
           <>
             <img
-              src={require("/images/profile.jpg")}
+              src={require("../public/images/profile.jpg")}
               className={utilStyles.borderCircle}
               height={144}
               width={144}
@@ -41,7 +41,7 @@ export default function Layout({ children, home }) {
             <Link href="/">
               <a>
                 <img
-                  src={require("/images/profile.jpg")}
+                  src={require("../public/images/profile.jpg")}
                   className={utilStyles.borderCircle}
                   height={108}
                   width={108}
