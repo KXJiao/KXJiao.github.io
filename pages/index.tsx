@@ -2,7 +2,8 @@ import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
-import Link from "next/link";
+import NextLink from "next/link";
+import { Link } from "@chakra-ui/react";
 import Date from "../components/date";
 
 interface HomeProps {
@@ -28,9 +29,11 @@ const Home = ({ allPostsData }: HomeProps) => {
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
+              <NextLink href={`/posts/${id}`}>
+                <Link>
+                  <a>{title}</a>
+                </Link>
+              </NextLink>
               <br />
               <small className={utilStyles.lightText}>
                 <Date dateString={date} />

@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import NextLink from "next/link";
 import {
   Box,
   Flex,
@@ -17,7 +18,7 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
-const Links = ["Dashboard", "Projects", "Team"];
+const Links = ["About", "Projects", "Misc"];
 
 const NavLink = ({ children }: { children: ReactNode }) => (
   <Link
@@ -56,7 +57,19 @@ const Navbar = () => {
               display={{ base: "none", md: "flex" }}
             >
               {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+                <NextLink key={link} href={`/${link}/`}>
+                  <Link
+                    px={2}
+                    py={1}
+                    rounded={"md"}
+                    _hover={{
+                      textDecoration: "none",
+                      bg: useColorModeValue("gray.200", "gray.700"),
+                    }}
+                  >
+                    {link}
+                  </Link>
+                </NextLink>
               ))}
             </HStack>
           </HStack>
