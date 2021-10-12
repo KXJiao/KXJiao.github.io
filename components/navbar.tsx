@@ -57,7 +57,7 @@ const Navbar = () => {
               display={{ base: "none", md: "flex" }}
             >
               {Links.map((link) => (
-                <NextLink key={link} href={`/${link}/`}>
+                <NextLink key={link} href={`/${link.toLowerCase()}/`}>
                   <Link
                     px={2}
                     py={1}
