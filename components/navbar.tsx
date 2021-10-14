@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import NextLink from "next/link";
 import {
   Box,
@@ -19,21 +18,6 @@ import {
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
 const Links = ["About", "Projects", "Misc"];
-
-const NavLink = ({ children }: { children: ReactNode }) => (
-  <Link
-    px={2}
-    py={1}
-    rounded={"md"}
-    _hover={{
-      textDecoration: "none",
-      bg: useColorModeValue("gray.200", "gray.700"),
-    }}
-    href={"#"}
-  >
-    {children}
-  </Link>
-);
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -96,7 +80,19 @@ const Navbar = () => {
           <Box pb={4} display={{ md: "none" }}>
             <Stack as={"nav"} spacing={4}>
               {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+                <NextLink key={link} href={`/${link.toLowerCase()}/`}>
+                  <Link
+                    px={2}
+                    py={1}
+                    rounded={"md"}
+                    _hover={{
+                      textDecoration: "none",
+                      bg: useColorModeValue("gray.200", "gray.700"),
+                    }}
+                  >
+                    {link}
+                  </Link>
+                </NextLink>
               ))}
             </Stack>
           </Box>
