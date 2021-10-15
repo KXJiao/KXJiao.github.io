@@ -1,8 +1,8 @@
 import Head from "next/head";
-import styles from "./layout.module.css";
-import utilStyles from "../styles/utils.module.css";
+import styles from "./Layout.module.css";
+import utilStyles from "../../styles/utils.module.css";
 import Link from "next/link";
-import Navbar from "./navbar";
+import Navbar from "../Navbar/Navbar";
 
 const name = "Kevin Jiao";
 export const siteTitle = "Kevin Jiao's Website";
@@ -33,7 +33,7 @@ const Layout = ({ children, home }: LayoutProps) => {
           {home ? (
             <>
               <img
-                src={require("../public/images/profile.jpg")}
+                src={require("../../public/images/profile.jpg")}
                 className={utilStyles.borderCircle}
                 height={144}
                 width={144}
@@ -46,7 +46,7 @@ const Layout = ({ children, home }: LayoutProps) => {
               <Link href="/">
                 <a>
                   <img
-                    src={require("../public/images/profile.jpg")}
+                    src={require("../../public/images/profile.jpg")}
                     className={utilStyles.borderCircle}
                     height={108}
                     width={108}
