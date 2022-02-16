@@ -1,12 +1,13 @@
 import Head from "next/head";
-import Layout, { siteTitle } from "../components/Layout/Layout";
+import Layout from "../components/Layout/Layout";
 import utilStyles from "../styles/utils.module.css";
+import userInfo from "../constants/info";
 
 const Misc = () => {
   return (
     <Layout>
       <Head>
-        <title>{siteTitle} - Miscellaneous</title>
+        <title>{userInfo.siteTitle} - Miscellaneous</title>
       </Head>
       <section className={utilStyles.headingMd}>
         <p>This page will contain miscellaneous items.</p>

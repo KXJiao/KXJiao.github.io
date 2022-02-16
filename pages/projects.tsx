@@ -1,12 +1,13 @@
 import Head from "next/head";
-import Layout, { siteTitle } from "../components/Layout/Layout";
+import Layout from "../components/Layout/Layout";
 import utilStyles from "../styles/utils.module.css";
+import userInfo from "../constants/info";
 
 const Projects = () => {
   return (
     <Layout>
       <Head>
-        <title>{siteTitle} - Projects</title>
+        <title>{userInfo.siteTitle} - Projects</title>
       </Head>
       <section className={utilStyles.headingMd}>
         <p>This page will have a list of projects.</p>
