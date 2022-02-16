@@ -1,9 +1,7 @@
-import NextLink from "next/link";
 import {
   Box,
   Flex,
   HStack,
-  Link,
   IconButton,
   Button,
   Menu,
@@ -35,7 +33,6 @@ const Navbar = () => {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={"center"}>
-            <Box>Logo</Box>
             <HStack
               as={"nav"}
               spacing={4}
