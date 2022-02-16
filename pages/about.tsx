@@ -1,12 +1,13 @@
 import Head from "next/head";
-import Layout, { siteTitle } from "../components/Layout/Layout";
+import Layout from "../components/Layout/Layout";
 import utilStyles from "../styles/utils.module.css";
+import userInfo from "../constants/info";
 
 const About = () => {
   return (
     <Layout>
       <Head>
-        <title>{siteTitle} - About</title>
+        <title>{userInfo.siteTitle} - About</title>
       </Head>
       <section className={utilStyles.headingMd}>
         <p>This page will have details about me.</p>

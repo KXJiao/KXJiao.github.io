@@ -1,3 +1,4 @@
+/* line 1, ../../Desktop/Projects/KXJiao.github.io/styles/css/utils.module.scss */
 .heading2Xl {
   font-size: 2.5rem;
   line-height: 1.2;
@@ -6,6 +7,7 @@
   margin: 1rem 0;
 }
 
+/* line 9, ../../Desktop/Projects/KXJiao.github.io/styles/css/utils.module.scss */
 .headingXl {
   font-size: 2rem;
   line-height: 1.3;
@@ -14,39 +16,49 @@
   margin: 1rem 0;
 }
 
+/* line 17, ../../Desktop/Projects/KXJiao.github.io/styles/css/utils.module.scss */
 .headingLg {
   font-size: 1.5rem;
   line-height: 1.4;
   margin: 1rem 0;
 }
 
+/* line 23, ../../Desktop/Projects/KXJiao.github.io/styles/css/utils.module.scss */
 .headingMd {
   font-size: 1.2rem;
   line-height: 1.5;
 }
 
+/* line 28, ../../Desktop/Projects/KXJiao.github.io/styles/css/utils.module.scss */
 .borderCircle {
   border-radius: 9999px;
 }
 
+/* line 32, ../../Desktop/Projects/KXJiao.github.io/styles/css/utils.module.scss */
 .colorInherit {
   color: inherit;
 }
 
+/* line 36, ../../Desktop/Projects/KXJiao.github.io/styles/css/utils.module.scss */
 .padding1px {
   padding-top: 1px;
 }
 
+/* line 40, ../../Desktop/Projects/KXJiao.github.io/styles/css/utils.module.scss */
 .list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+/* line 46, ../../Desktop/Projects/KXJiao.github.io/styles/css/utils.module.scss */
 .listItem {
   margin: 0 0 1.25rem;
 }
 
+/* line 50, ../../Desktop/Projects/KXJiao.github.io/styles/css/utils.module.scss */
 .lightText {
   color: #666;
 }
+
+/*# sourceMappingURL=utils.module.css.map */

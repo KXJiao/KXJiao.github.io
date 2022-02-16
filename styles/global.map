@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "global.css",
+	"sources": [
+		"css/global.scss"
+	],
+	"sourcesContent": [
+		"html,\r\nbody {\r\n  padding: 0;\r\n  margin: 0;\r\n  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,\r\n    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;\r\n  line-height: 1.6;\r\n  font-size: 18px;\r\n}\r\n* {\r\n  box-sizing: border-box;\r\n}\r\na {\r\n  color: #0070f3;\r\n  text-decoration: none;\r\n  &:hover {\r\n    text-decoration: underline;\r\n  }\r\n}\r\nimg {\r\n  max-width: 100%;\r\n  display: block;\r\n}\r\n"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,IAAI;AACJ,IAAI,CAAC;EACH,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,WAAW,EAAE,kIACyD;EACtE,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,IAAI;CAChB;;;AACD,AAAA,CAAC,CAAC;EACA,UAAU,EAAE,UAAU;CACvB;;;AACD,AAAA,CAAC,CAAC;EACA,KAAK,EAAE,OAAO;EACd,eAAe,EAAE,IAAI;CAItB;;;AAND,AAGE,CAHD,AAGE,MAAM,CAAC;EACN,eAAe,EAAE,SAAS;CAC3B;;;AAEH,AAAA,GAAG,CAAC;EACF,SAAS,EAAE,IAAI;EACf,OAAO,EAAE,KAAK;CACf"
+}
