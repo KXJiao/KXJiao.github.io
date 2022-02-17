@@ -3,7 +3,7 @@ import Layout from "../../../components/Layout/Layout";
 import Date from "../../../components/Date/Date";
 import utilStyles from "../../../styles/utils.module.css";
 import userInfo from "../../../constants/info";
-import { VStack, Image, OrderedList, ListItem } from "@chakra-ui/react";
+import { VStack, Image, OrderedList, ListItem, Link } from "@chakra-ui/react";
 import YouTube from "react-youtube";
 
 const Project1 = () => {
@@ -44,6 +44,26 @@ const Project1 = () => {
           </ListItem>
           <Image src="/images/Change3.PNG" />
         </OrderedList>
+        <h2 className={utilStyles.headingMd}>Credits</h2>
+        <Link
+          href="https://sketchfab.com/3d-models/mark-zuckerberg-deb8560956d947c8b6c3c41790532160"
+          isExternal
+        >
+          EntropyNine from Sketchfab for the Mark Zuckerberg model.
+        </Link>
+        <Link
+          href="https://sketchfab.com/3d-models/sweet-baby-marks-baby-rays-76e7a8d096a24a3aa20424ada27d54bb"
+          isExternal
+        >
+          pryor.w.k from Sketchfab for the Sweet Baby Ray's Barbecue Sauce
+          model.
+        </Link>
+        <Link href="https://www.solarsystemscope.com/textures/" isExternal>
+          solarsystemscope.com for the Solar System textures.
+        </Link>
+        <Link href="https://www.youtube.com/watch?v=pjNI9K1D_xo" isExternal>
+          Mark Zuckerberg for his voice.
+        </Link>
       </VStack>
     </Layout>
   );
