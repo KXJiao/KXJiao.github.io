@@ -7,7 +7,7 @@ const userInfo = {
       title: "Computer Animation Projects",
       description: "Projects made in Computer Animation class",
       githubLink: "",
-      deployLink: "/projects/animations/",
+      deployLink: "/projects/animations",
       tags: ["Autodesk Maya"],
     },
   ],
