@@ -14,8 +14,8 @@ const userInfo = {
   animations: [
     {
       imageURL: "/images/Change2.PNG",
-      title: "Project 1: Solar System",
-      description: "First Project",
+      title: "Project 1: Planet Animation",
+      description: "First Project: Solar System animation",
       githubLink: "",
       deployLink: "/projects/animations/project1",
       tags: [],
