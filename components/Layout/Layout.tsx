@@ -1,8 +1,8 @@
-import Head from "next/head";
 import { Flex } from "@chakra-ui/react";
-import Navbar from "../Navbar/Navbar";
-import Footer from "../Footer/Footer";
+import Head from "next/head";
 import userInfo from "../../constants/info";
+import Footer from "../Footer/Footer";
+import Navbar from "../Navbar/Navbar";
 
 interface LayoutProps {
   children: React.ReactNode;

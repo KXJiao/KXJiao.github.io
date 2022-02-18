@@ -1,16 +1,16 @@
-import Head from "next/head";
-import Layout from "../../../components/Layout/Layout";
-import Date from "../../../components/Date/Date";
-import utilStyles from "../../../styles/utils.module.css";
-import userInfo from "../../../constants/info";
 import {
-  VStack,
-  Image,
-  OrderedList,
-  ListItem,
-  Link,
   AspectRatio,
+  Image,
+  Link,
+  ListItem,
+  OrderedList,
+  VStack,
 } from "@chakra-ui/react";
+import Head from "next/head";
+import Date from "../../../components/Date/Date";
+import Layout from "../../../components/Layout/Layout";
+import userInfo from "../../../constants/info";
+import utilStyles from "../../../styles/utils.module.css";
 
 const Project1 = () => {
   return (
