@@ -3,8 +3,14 @@ import Layout from "../../../components/Layout/Layout";
 import Date from "../../../components/Date/Date";
 import utilStyles from "../../../styles/utils.module.css";
 import userInfo from "../../../constants/info";
-import { VStack, Image, OrderedList, ListItem, Link } from "@chakra-ui/react";
-import YouTube from "react-youtube";
+import {
+  VStack,
+  Image,
+  OrderedList,
+  ListItem,
+  Link,
+  AspectRatio,
+} from "@chakra-ui/react";
 
 const Project1 = () => {
   return (
@@ -24,9 +30,13 @@ const Project1 = () => {
           <Date dateString="2022-02-16" />
         </div>
         <h2 className={utilStyles.headingMd}>Planet Tutorial Animation:</h2>
-        <YouTube videoId="w2u8ZWEfK-E" />
+        <AspectRatio minW="80vw" ratio={16 / 9}>
+          <iframe src="https://www.youtube.com/embed/w2u8ZWEfK-E" />
+        </AspectRatio>
         <h2 className={utilStyles.headingMd}>Modified Animation Video:</h2>
-        <YouTube videoId="w06QKSekLCk" />
+        <AspectRatio minW="80vw" ratio={16 / 9}>
+          <iframe src="https://www.youtube.com/embed/w06QKSekLCk" />
+        </AspectRatio>
         <h2 className={utilStyles.headingMd}>Changes Made</h2>
         <OrderedList spacing={5}>
           <ListItem>
