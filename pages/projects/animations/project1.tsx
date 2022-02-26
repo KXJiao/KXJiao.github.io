@@ -1,16 +1,9 @@
-import {
-  AspectRatio,
-  Image,
-  Link,
-  ListItem,
-  OrderedList,
-  VStack,
-} from "@chakra-ui/react";
+import { Heading, Image, Link, ListItem, OrderedList } from "@chakra-ui/react";
 import Head from "next/head";
-import Date from "../../../components/Date/Date";
+import Article from "../../../components/Article/Article";
+import ArticleVideo from "../../../components/Article/ArticleVideo";
 import Layout from "../../../components/Layout/Layout";
 import userInfo from "../../../constants/info";
-import utilStyles from "../../../styles/utils.module.css";
 
 const Project1 = () => {
   return (
@@ -18,26 +11,18 @@ const Project1 = () => {
       <Head>
         <title>{userInfo.siteTitle} - Animations: Project1</title>
       </Head>
-      <VStack
-        as={"article"}
-        spacing={5}
-        justifyContent="center"
-        px={["5vw", "10vw"]}
-        my={["2", "2", "5", "5"]}
-      >
-        <h1 className={utilStyles.headingXl}>Project 1: Planet Animations</h1>
-        <div className={utilStyles.lightText}>
-          <Date dateString="2022-02-16" />
-        </div>
-        <h2 className={utilStyles.headingMd}>Planet Tutorial Animation:</h2>
-        <AspectRatio minW="80vw" ratio={16 / 9}>
-          <iframe src="https://www.youtube.com/embed/w2u8ZWEfK-E" />
-        </AspectRatio>
-        <h2 className={utilStyles.headingMd}>Modified Animation Video:</h2>
-        <AspectRatio minW="80vw" ratio={16 / 9}>
-          <iframe src="https://www.youtube.com/embed/w06QKSekLCk" />
-        </AspectRatio>
-        <h2 className={utilStyles.headingMd}>Changes Made</h2>
+      <Article title="Project 1: Planet Animations" date="2022-02-16">
+        <Heading size="md">Planet Tutorial Animation:</Heading>
+        <ArticleVideo
+          size="80vw"
+          src="https://www.youtube.com/embed/w2u8ZWEfK-E"
+        />
+        <Heading size="md">Modified Animation Video:</Heading>
+        <ArticleVideo
+          size="80vw"
+          src="https://www.youtube.com/embed/w06QKSekLCk"
+        />
+        <Heading size="md">Changes Made</Heading>
         <OrderedList spacing={5}>
           <ListItem>
             Textures were added to the sun, planets, and moons.
@@ -54,7 +39,7 @@ const Project1 = () => {
           </ListItem>
           <Image src="/images/Change3.PNG" />
         </OrderedList>
-        <h2 className={utilStyles.headingMd}>Credits</h2>
+        <Heading size="md">Credits</Heading>
         <Link
           href="https://sketchfab.com/3d-models/mark-zuckerberg-deb8560956d947c8b6c3c41790532160"
           isExternal
@@ -74,7 +59,7 @@ const Project1 = () => {
         <Link href="https://www.youtube.com/watch?v=pjNI9K1D_xo" isExternal>
           Mark Zuckerberg for his voice.
         </Link>
-      </VStack>
+      </Article>
     </Layout>
   );
 };
