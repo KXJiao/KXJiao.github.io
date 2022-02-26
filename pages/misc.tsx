@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Layout from "../components/Layout/Layout";
-import utilStyles from "../styles/utils.module.css";
 import userInfo from "../constants/info";
+import utilStyles from "../styles/utils.module.css";
 
 const Misc = () => {
   return (

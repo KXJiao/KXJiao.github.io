@@ -1,8 +1,8 @@
+import { SimpleGrid, Stack } from "@chakra-ui/react";
 import Head from "next/head";
+import Card, { CardProps } from "../../components/Card/Card";
 import Layout from "../../components/Layout/Layout";
 import userInfo from "../../constants/info";
-import { SimpleGrid, Stack } from "@chakra-ui/react";
-import Card, { CardProps } from "../../components/Card/Card";
 
 const Animations = () => {
   return (

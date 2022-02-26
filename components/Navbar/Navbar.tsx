@@ -1,20 +1,20 @@
+import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import {
   Box,
+  chakra,
   Flex,
   HStack,
   IconButton,
-  useDisclosure,
-  useColorModeValue,
-  Stack,
-  chakra,
-  VisuallyHidden,
   Link,
+  Stack,
+  useColorModeValue,
+  useDisclosure,
+  VisuallyHidden,
 } from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import NextLink from "next/link";
-import NavbarLink from "../NavbarLink/NavbarLink";
-import ChickenIcon from "../ChickenIcon/ChickenIcon";
 import userInfo from "../../constants/info";
+import ChickenIcon from "../ChickenIcon/ChickenIcon";
+import NavbarLink from "../NavbarLink/NavbarLink";
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();

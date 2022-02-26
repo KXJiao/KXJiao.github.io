@@ -1,7 +1,7 @@
-import Layout from "../../components/Layout/Layout";
-import Date from "../../components/Date/Date";
-import { getAllPostIds, getPostData } from "../../lib/posts";
 import Head from "next/head";
+import Date from "../../components/Date/Date";
+import Layout from "../../components/Layout/Layout";
+import { getAllPostIds, getPostData } from "../../lib/posts";
 import utilStyles from "../../styles/utils.module.css";
 
 interface PostProps {

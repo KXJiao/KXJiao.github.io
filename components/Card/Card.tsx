@@ -1,28 +1,25 @@
 import {
-  TagLeftIcon,
-  Tag,
-  Text,
-  Stack,
-  Divider,
-  TagLabel,
-  Link,
-  Image,
   Box,
-  Flex,
-  useColorModeValue,
   chakra,
+  Image,
+  Link,
+  Stack,
+  Tag,
+  TagLabel,
+  TagLeftIcon,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { IconType } from "react-icons";
 import {
-  FaReact,
-  FaPython,
-  FaPepperHot,
-  FaJs,
-  FaSass,
   FaCode,
-  FaGithub,
-  FaExternalLinkAlt,
   FaDatabase,
+  FaExternalLinkAlt,
+  FaGithub,
+  FaJs,
+  FaPepperHot,
+  FaPython,
+  FaReact,
+  FaSass,
 } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 

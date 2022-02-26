@@ -1,7 +1,3 @@
-import Head from "next/head";
-import Layout from "../components/Layout/Layout";
-import utilStyles from "../styles/utils.module.css";
-import { getSortedPostsData } from "../lib/posts";
 import {
   Button,
   Flex,
@@ -11,8 +7,12 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
+import Head from "next/head";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Layout from "../components/Layout/Layout";
 import userInfo from "../constants/info";
+import { getSortedPostsData } from "../lib/posts";
+import utilStyles from "../styles/utils.module.css";
 
 interface HomeProps {
   allPostsData: {
