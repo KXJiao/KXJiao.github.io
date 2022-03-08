@@ -12,7 +12,6 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Layout from "../components/Layout/Layout";
 import userInfo from "../constants/info";
 import { getSortedPostsData } from "../lib/posts";
-import utilStyles from "../styles/utils.module.css";
 
 interface HomeProps {
   allPostsData: {
@@ -37,8 +36,7 @@ const Home = ({ allPostsData }: HomeProps) => {
         mx="auto"
       >
         <Image
-          src={require("../public/images/profile.jpg")}
-          className={utilStyles.borderCircle}
+          src={require("../public/images/profile.svg")}
           height={144}
           width={144}
           alt={userInfo.name}

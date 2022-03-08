@@ -12,7 +12,6 @@ import {
 import { IconType } from "react-icons";
 import {
   FaCode,
-  FaDatabase,
   FaExternalLinkAlt,
   FaGithub,
   FaJs,
@@ -21,7 +20,7 @@ import {
   FaReact,
   FaSass,
 } from "react-icons/fa";
-import { SiNextdotjs } from "react-icons/si";
+import { SiNextdotjs, SiTypescript } from "react-icons/si";
 
 export type CardProps = {
   imageURL: string;
@@ -43,7 +42,7 @@ const Card = ({
   const getTag = (tag: string) => {
     let values: [color: string, icon: IconType] = ["", FaCode];
     if (tag == "React") {
-      values[0] = "blue";
+      values[0] = "cyan";
       values[1] = FaReact;
     } else if (tag == "Python") {
       values[0] = "orange";
@@ -51,15 +50,15 @@ const Card = ({
     } else if (tag == "Javascript") {
       values[0] = "yellow";
       values[1] = FaJs;
+    } else if (tag == "Typescript") {
+      values[0] = "linkedin";
+      values[1] = SiTypescript;
     } else if (tag == "Sass") {
       values[0] = "pink";
       values[1] = FaSass;
     } else if (tag == "Flask") {
       values[0] = "green";
       values[1] = FaPepperHot;
-    } else if (tag == "SQL") {
-      values[0] = "blue";
-      values[1] = FaDatabase;
     } else if (tag == "Next.js") {
       values[0] = "gray";
       values[1] = SiNextdotjs;
