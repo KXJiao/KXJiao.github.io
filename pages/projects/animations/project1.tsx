@@ -11,7 +11,7 @@ const Project1 = () => {
       <Head>
         <title>{userInfo.siteTitle} - Animations: Project1</title>
       </Head>
-      <Article title="Project 1: Planet Animations" date="2022-02-16">
+      <Article title="Project 1: Planet Animation" date="2022-02-17">
         <Heading size="md">Planet Tutorial Animation:</Heading>
         <ArticleVideo
           size="80vw"
@@ -27,17 +27,26 @@ const Project1 = () => {
           <ListItem>
             Textures were added to the sun, planets, and moons.
           </ListItem>
-          <Image src="/images/Change1.PNG" />
+          <Image
+            src="/images/animations/project1/Change1.PNG"
+            alt="Planets textured"
+          />
           <ListItem>
             The orbits of the planets were "modified", along with the sun
             transforming into something else entirely.
           </ListItem>
-          <Image src="/images/Change2.PNG" />
+          <Image
+            src="/images/animations/project1/Change2.PNG"
+            alt="Planets with orbit shifted"
+          />
           <ListItem>
             The harbinger of the Metaverse arrives, spreading the Metaverse to
             all.
           </ListItem>
-          <Image src="/images/Change3.PNG" />
+          <Image
+            src="/images/animations/project1/Change3.PNG"
+            alt="Mark Zuckerberg from below"
+          />
         </OrderedList>
         <Heading size="md">Credits</Heading>
         <Link
