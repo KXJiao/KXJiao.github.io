@@ -1,4 +1,4 @@
-[https://kxjiao.github.io/](https://kxjiao.github.io/)
+[kevinjiao.tech](https://kevinjiao.tech/)
 
 Chicken emoji from Twemoji: https://twemoji.twitter.com/
 
