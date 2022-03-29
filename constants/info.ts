@@ -38,6 +38,14 @@ const userInfo = {
       deployLink: "/projects/animations/project2",
       tags: [],
     },
+    {
+      imageURL: "/images/animations/project3/icon.png",
+      title: "Project 3: Bouncy Ball",
+      description: "Third Project: 12 Principles of Animaton",
+      githubLink: "",
+      deployLink: "/projects/animations/project3",
+      tags: [],
+    },
   ],
   socialLinks: {
     linkedin: "https://linkedin.com/in/kxjiao",
