@@ -22,7 +22,7 @@ const Project3 = () => {
         <Heading size="md">Final Animation:</Heading>
         <ArticleVideo
           size="80vw"
-          src="https://www.youtube.com/embed/po36m77X77A"
+          src="https://www.youtube.com/embed/rL8MNM544lE"
         />
 
         <Spacer />
@@ -107,7 +107,11 @@ const Project3 = () => {
 
         <Heading size="sm">Arcs</Heading>
         <SimpleGrid justifyItems="center" columns={2} spacing={5}>
-          <Image h={64} src="/images/animations/project3/arc.png" alt="Arcs" />
+          <Image
+            h={64}
+            src="/images/animations/project3/squash.png"
+            alt="Arcs"
+          />
           <Text justifySelf="start" fontSize="lg">
             Ramps are arc shaped so all the skate animations count right?
             Otherwise, when the ball bird is jumping onto its skateboard, it
@@ -265,6 +269,55 @@ const Project3 = () => {
         </Link>
         <Link href="https://polyhaven.com/a/noon_grass" isExternal>
           Noon Grass HDRI from Poly Haven
+        </Link>
+        <Link href="https://www.youtube.com/watch?v=rDbGdc7L-qA" isExternal>
+          Flock of Starlings from Youtube
+        </Link>
+        <Link href="https://www.youtube.com/watch?v=4DKw5wheGQQ" isExternal>
+          ASMR | Skate park sounds from Youtube
+        </Link>
+        <Link href="https://www.youtube.com/watch?v=toexFBZmYqY" isExternal>
+          ASMR Skateboarding Kick Push Ride- 1 Hour 1080p HD Tingle Sounds Sleep
+          Relax Study (NO TALKING) from Youtube
+        </Link>
+        <Link href="https://archive.org/details/BudgieSounds/" isExternal>
+          Budgie Sounds from Internet Archive
+        </Link>
+        <Link href="https://www.youtube.com/watch?v=SHl7tvfY9Fs" isExternal>
+          Skateboard Ollie Sound Effect from Youtube
+        </Link>
+        <Link href="https://www.youtube.com/watch?v=ZJ-pxThGrmo" isExternal>
+          BOOMERANG SOUND EFFECT | Swing | Swoosh| Thrown from Youtube
+        </Link>
+        <Link href="https://www.youtube.com/watch?v=iew9op9aPLQ" isExternal>
+          Cartoon Boing Sound Effect from Youtube
+        </Link>
+        <Link href="https://www.youtube.com/watch?v=y8OtzJtp-EM" isExternal>
+          Immigrant Song (Remaster) by Led Zeppelin from Youtube
+        </Link>
+        <Link href="https://www.youtube.com/watch?v=HDRVzwNkV20" isExternal>
+          Whoosh Sound Effects from Youtube
+        </Link>
+        <Link href="https://www.youtube.com/watch?v=sivqrrbfZWI" isExternal>
+          Cartoon Slow Rise Sound Effect from Youtube
+        </Link>
+        <Link href="https://www.youtube.com/watch?v=XFirF_bFHVg" isExternal>
+          goofy ahh sounds from Youtube
+        </Link>
+        <Link href="https://www.youtube.com/watch?v=Qgx-WOn8CDA" isExternal>
+          cartoon fall (sound effect) from Youtube
+        </Link>
+        <Link href="https://www.youtube.com/watch?v=Ag1o3koTLWM" isExternal>
+          Curb Your Enthusiasm Theme from Youtube
+        </Link>
+        <Link href="https://www.youtube.com/watch?v=gvBoUDiMkJY" isExternal>
+          Angry Budgie from Youtube
+        </Link>
+        <Link href="https://www.youtube.com/watch?v=Ub_GUGGUmF4" isExternal>
+          Cartoon Impacts Sound Effects from Youtube
+        </Link>
+        <Link href="https://www.youtube.com/watch?v=lUVQz6_-vxc" isExternal>
+          Parrot: What the F**K from Youtube
         </Link>
       </Article>
     </Layout>
