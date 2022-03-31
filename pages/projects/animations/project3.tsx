@@ -22,7 +22,7 @@ const Project3 = () => {
         <Heading size="md">Final Animation:</Heading>
         <ArticleVideo
           size="80vw"
-          src="https://www.youtube.com/embed/po36m77X77A"
+          src="https://www.youtube.com/embed/rL8MNM544lE"
         />
 
         <Spacer />
