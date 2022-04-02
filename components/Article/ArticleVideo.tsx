@@ -8,7 +8,7 @@ type ArticleVideoProps = {
 const ArticleVideo = ({ src, size }: ArticleVideoProps) => {
   return (
     <AspectRatio minW={size} ratio={16 / 9}>
-      <iframe src={src} />
+      <iframe src={src} allow="fullscreen" />
     </AspectRatio>
   );
 };
