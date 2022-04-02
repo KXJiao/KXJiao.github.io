@@ -121,12 +121,12 @@ const Card = ({
           spacing={4}
         >
           {githubLink && (
-            <Link href={githubLink} color="black" isExternal>
+            <Link href={githubLink} isExternal>
               <FaGithub aria-label="github" size={23} />
             </Link>
           )}
           {deployLink && (
-            <Link href={deployLink} color="black" isExternal>
+            <Link href={deployLink} isExternal>
               <FaExternalLinkAlt aria-label="project link" size={20} />
             </Link>
           )}
