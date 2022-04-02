@@ -25,7 +25,7 @@ const Navbar = () => {
         <Flex alignItems="center" justifyContent="space-between" mx="auto">
           {!isOpen ? (
             <Flex>
-              <NextLink href="/">
+              <NextLink href="/" passHref>
                 <Link title="Home Page" display="flex" alignItems="center">
                   <ChickenIcon />
                   <VisuallyHidden>KJ</VisuallyHidden>

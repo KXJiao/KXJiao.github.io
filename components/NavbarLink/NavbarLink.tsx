@@ -7,7 +7,7 @@ interface NavbarLinkProps {
 
 const NavbarLink = ({ link }: NavbarLinkProps) => {
   return (
-    <NextLink href={`/${link.toLowerCase()}/`}>
+    <NextLink href={`/${link.toLowerCase()}/`} passHref>
       <Link
         px={2}
         py={1}
