@@ -11,6 +11,7 @@ const userInfo = {
       githubLink: "",
       deployLink: "/projects/animations",
       tags: ["Autodesk Maya"],
+      external: false,
     },
     {
       imageURL: "/images/site.PNG",
@@ -19,6 +20,7 @@ const userInfo = {
       githubLink: "https://github.com/KXJiao/KXJiao.github.io",
       deployLink: "/",
       tags: ["Next.js", "Typescript"],
+      external: false,
     },
   ],
   animations: [
@@ -29,6 +31,7 @@ const userInfo = {
       githubLink: "",
       deployLink: "/projects/animations/project1",
       tags: [],
+      external: false,
     },
     {
       imageURL: "/images/animations/project2/Smooth2.PNG",
@@ -37,6 +40,7 @@ const userInfo = {
       githubLink: "",
       deployLink: "/projects/animations/project2",
       tags: [],
+      external: false,
     },
     {
       imageURL: "/images/animations/project3/icon.png",
@@ -45,6 +49,7 @@ const userInfo = {
       githubLink: "",
       deployLink: "/projects/animations/project3",
       tags: [],
+      external: false,
     },
   ],
   socialLinks: {

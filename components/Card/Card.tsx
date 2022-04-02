@@ -9,12 +9,14 @@ import {
   TagLeftIcon,
   useColorModeValue,
 } from "@chakra-ui/react";
+import NextLink from "next/link";
 import { IconType } from "react-icons";
 import {
   FaCode,
   FaExternalLinkAlt,
   FaGithub,
   FaJs,
+  FaLink,
   FaPepperHot,
   FaPython,
   FaReact,
@@ -29,6 +31,7 @@ export type CardProps = {
   githubLink: string;
   deployLink: string;
   tags: string[];
+  external: boolean;
 };
 
 const Card = ({
@@ -38,6 +41,7 @@ const Card = ({
   githubLink,
   deployLink,
   tags,
+  external,
 }: CardProps) => {
   const getTag = (tag: string) => {
     let values: [color: string, icon: IconType] = ["", FaCode];
@@ -113,24 +117,32 @@ const Card = ({
           >
             {description}
           </chakra.p>
+          <Stack
+            isInline
+            justifyContent="flex-end"
+            alignItems="center"
+            spacing={4}
+            mt={2}
+          >
+            {githubLink && (
+              <Link href={githubLink} isExternal>
+                <FaGithub aria-label="github" size={23} />
+              </Link>
+            )}
+            {deployLink &&
+              (external ? (
+                <Link href={deployLink} isExternal>
+                  <FaExternalLinkAlt aria-label="project link" size={20} />
+                </Link>
+              ) : (
+                <NextLink href={deployLink} passHref>
+                  <Link>
+                    <FaLink aria-label="project link" size={20} />
+                  </Link>
+                </NextLink>
+              ))}
+          </Stack>
         </Box>
-        <Stack
-          isInline
-          justifyContent="flex-end"
-          alignItems="center"
-          spacing={4}
-        >
-          {githubLink && (
-            <Link href={githubLink} isExternal>
-              <FaGithub aria-label="github" size={23} />
-            </Link>
-          )}
-          {deployLink && (
-            <Link href={deployLink} isExternal>
-              <FaExternalLinkAlt aria-label="project link" size={20} />
-            </Link>
-          )}
-        </Stack>
       </Box>
     </Box>
   );

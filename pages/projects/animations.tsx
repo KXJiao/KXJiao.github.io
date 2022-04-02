@@ -26,6 +26,7 @@ const Animations = () => {
               githubLink={animation.githubLink}
               deployLink={animation.deployLink}
               tags={animation.tags}
+              external={animation.external}
             />
           ))}
         </SimpleGrid>
