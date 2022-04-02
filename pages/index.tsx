@@ -56,11 +56,7 @@ const Home = ({ allPostsData }: HomeProps) => {
           </Text>
           <Stack isInline spacing={4}>
             <Link href={userInfo.socialLinks.github} isExternal>
-              <Button
-                leftIcon={<FaGithub color="#4299E1" />}
-                position="static"
-                color="black"
-              >
+              <Button leftIcon={<FaGithub color="#4299E1" />} position="static">
                 Github
               </Button>
             </Link>
@@ -68,7 +64,6 @@ const Home = ({ allPostsData }: HomeProps) => {
               <Button
                 leftIcon={<FaLinkedin color="#4299E1" />}
                 position="static"
-                color="black"
               >
                 LinkedIn
               </Button>

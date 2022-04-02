@@ -1,4 +1,4 @@
-import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
+import { CloseIcon, HamburgerIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
 import {
   Box,
   chakra,
@@ -7,6 +7,7 @@ import {
   IconButton,
   Link,
   Stack,
+  useColorMode,
   useColorModeValue,
   useDisclosure,
   VisuallyHidden,
@@ -18,7 +19,7 @@ import NavbarLink from "../NavbarLink/NavbarLink";
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-
+  const { colorMode, toggleColorMode } = useColorMode();
   return (
     <>
       <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
@@ -53,6 +54,13 @@ const Navbar = () => {
                 {userInfo.siteLinks.map((link) => (
                   <NavbarLink key={link} link={link}></NavbarLink>
                 ))}
+                <IconButton
+                  mt={4}
+                  aria-label="Toggle Mode"
+                  onClick={toggleColorMode}
+                >
+                  {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+                </IconButton>
               </HStack>
             </HStack>
           </Flex>
@@ -63,6 +71,13 @@ const Navbar = () => {
               {userInfo.siteLinks.map((link) => (
                 <NavbarLink key={link} link={link}></NavbarLink>
               ))}
+              <IconButton
+                mt={4}
+                aria-label="Toggle Mode"
+                onClick={toggleColorMode}
+              >
+                {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+              </IconButton>
             </Stack>
           </Box>
         ) : null}
