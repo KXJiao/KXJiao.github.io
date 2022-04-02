@@ -98,17 +98,32 @@ const Card = ({
 
       <Box p={6}>
         <Box>
-          <Link
-            display="block"
-            color={useColorModeValue("gray.800", "white")}
-            fontWeight="bold"
-            fontSize="2xl"
-            mt={2}
-            href={deployLink}
-            _hover={{ color: "gray.600", textDecor: "underline" }}
-          >
-            {title}
-          </Link>
+          {external ? (
+            <Link
+              display="block"
+              color={useColorModeValue("gray.800", "white")}
+              fontWeight="bold"
+              fontSize="2xl"
+              mt={2}
+              href={deployLink}
+              _hover={{ color: "gray.600", textDecor: "underline" }}
+            >
+              {title}
+            </Link>
+          ) : (
+            <NextLink href={deployLink} passHref>
+              <Link
+                display="block"
+                color={useColorModeValue("gray.800", "white")}
+                fontWeight="bold"
+                fontSize="2xl"
+                mt={2}
+                _hover={{ color: "gray.600", textDecor: "underline" }}
+              >
+                {title}
+              </Link>
+            </NextLink>
+          )}
           <Stack isInline>{Tags}</Stack>
           <chakra.p
             mt={2}
