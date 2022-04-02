@@ -26,6 +26,7 @@ const Projects = () => {
               githubLink={project.githubLink}
               deployLink={project.deployLink}
               tags={project.tags}
+              external={project.external}
             />
           ))}
         </SimpleGrid>
