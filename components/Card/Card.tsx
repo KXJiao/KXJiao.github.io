@@ -1,6 +1,7 @@
 import {
   Box,
   chakra,
+  Divider,
   Image,
   Link,
   Stack,
@@ -96,14 +97,14 @@ const Card = ({
         alt="Project image"
       />
 
-      <Box p={6}>
-        <Box>
+      <Stack px={6} py={3}>
+        <Stack isInline justifyContent="space-between" alignItems="center">
           {external ? (
             <Link
               display="block"
               color={useColorModeValue("gray.800", "white")}
               fontWeight="bold"
-              fontSize="2xl"
+              fontSize="xl"
               mt={2}
               href={deployLink}
               _hover={{ color: "gray.600", textDecor: "underline" }}
@@ -116,7 +117,7 @@ const Card = ({
                 display="block"
                 color={useColorModeValue("gray.800", "white")}
                 fontWeight="bold"
-                fontSize="2xl"
+                fontSize="xl"
                 mt={2}
                 _hover={{ color: "gray.600", textDecor: "underline" }}
               >
@@ -124,14 +125,6 @@ const Card = ({
               </Link>
             </NextLink>
           )}
-          <Stack isInline>{Tags}</Stack>
-          <chakra.p
-            mt={2}
-            fontSize="sm"
-            color={useColorModeValue("gray.600", "gray.400")}
-          >
-            {description}
-          </chakra.p>
           <Stack
             isInline
             justifyContent="flex-end"
@@ -157,8 +150,18 @@ const Card = ({
                 </NextLink>
               ))}
           </Stack>
-        </Box>
-      </Box>
+        </Stack>
+
+        <Stack isInline>{Tags}</Stack>
+        <Divider />
+        <chakra.p
+          mt={2}
+          fontSize="sm"
+          color={useColorModeValue("gray.600", "gray.400")}
+        >
+          {description}
+        </chakra.p>
+      </Stack>
     </Box>
   );
 };

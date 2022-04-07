@@ -16,7 +16,7 @@ const Projects = () => {
         px={["5vw", "10vw"]}
         my={["2", "2", "5", "5"]}
       >
-        <SimpleGrid columns={{ sm: 1, md: 3 }} spacing={8}>
+        <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }} spacing={8}>
           {userInfo.projects.map((project: CardProps) => (
             <Card
               key={project.title}
