@@ -22,7 +22,7 @@ const Project4 = () => {
         <Heading size="md">Final Animation:</Heading>
         <ArticleVideo
           size="80vw"
-          src="https://www.youtube.com/embed/rL8MNM544lE"
+          src="https://www.youtube.com/embed/YROofZCpC1w"
         />
 
         <Spacer />
@@ -44,8 +44,7 @@ const Project4 = () => {
             alt="Ceiling Fan"
           />
           <Text justifySelf="start" fontSize="lg">
-            Used on several occasions with the ball bird, most notably when it
-            bounces at the end of the animation.
+            A ceiling fan begins spinning, setting the "machine" in motion
           </Text>
         </SimpleGrid>
 
@@ -57,8 +56,7 @@ const Project4 = () => {
             alt="Yellow Ball"
           />
           <Text justifySelf="start" fontSize="lg">
-            Used on several occasions with the ball bird, most notably when it
-            bounces at the end of the animation.
+            A yellow ball spins a few times on the fan, then falls into a bowl.
           </Text>
         </SimpleGrid>
 
@@ -66,8 +64,8 @@ const Project4 = () => {
         <SimpleGrid justifyItems="center" columns={2} spacing={5}>
           <Image h={64} src="/images/animations/project4/bowl.png" alt="Bowl" />
           <Text justifySelf="start" fontSize="lg">
-            Used on several occasions with the ball bird, most notably when it
-            bounces at the end of the animation.
+            A bowl is catches the ball and redirects the ball's bounce to the
+            vases.
           </Text>
         </SimpleGrid>
 
@@ -79,8 +77,8 @@ const Project4 = () => {
             alt="Vases"
           />
           <Text justifySelf="start" fontSize="lg">
-            Used on several occasions with the ball bird, most notably when it
-            bounces at the end of the animation.
+            The ball strikes the vases, which fall down one by one in a domino
+            effect.
           </Text>
         </SimpleGrid>
 
@@ -92,8 +90,7 @@ const Project4 = () => {
             alt="Bowling Ball"
           />
           <Text justifySelf="start" fontSize="lg">
-            Used on several occasions with the ball bird, most notably when it
-            bounces at the end of the animation.
+            The last vase hits a bowling ball, which falls off the shelf.
           </Text>
         </SimpleGrid>
 
@@ -105,8 +102,9 @@ const Project4 = () => {
             alt="Plank"
           />
           <Text justifySelf="start" fontSize="lg">
-            Used on several occasions with the ball bird, most notably when it
-            bounces at the end of the animation.
+            The bowling ball strikes a plank attached to a hinge. (Note: an
+            issue with collision between the bowling ball and the plank will be
+            fixed.)
           </Text>
         </SimpleGrid>
 
@@ -118,15 +116,20 @@ const Project4 = () => {
             alt="Cake Box"
           />
           <Text justifySelf="start" fontSize="lg">
-            Used on several occasions with the ball bird, most notably when it
-            bounces at the end of the animation.
+            The plank knocks over the cake box, revealing a cake under the box.
           </Text>
         </SimpleGrid>
 
         <Spacer />
-        <Heading size="md">Challenges</Heading>
+        <Heading size="md">Notes</Heading>
         <Text justifySelf="start" fontSize="lg">
-          text
+          I was inspired by a Rube Goldberg machine from the game Ghost Trick:
+          Phantom Detective. I had to take some creative liberties because the
+          2D physics was difficult to translate to Maya FX. Regretablly, I had
+          to cut the animation short because some items were not playing nicely
+          with each other, but I will be releasing a complete version soon, and
+          hopefully rendered with Arnold if my laptop can handle it (which
+          history says it may not...).
         </Text>
         <Spacer />
 
@@ -142,6 +145,13 @@ const Project4 = () => {
           isExternal
         >
           Chocolate Cake from Sketchfab, by Jack Kelly
+        </Link>
+        <Link
+          href="https://apps.apple.com/us/app/ghost-trick-phantom-detective/id489113377"
+          isExternal
+        >
+          Song is 4 Minutes Before Death, from GHOST TRICK: Phantom Detective by
+          CAPCOM
         </Link>
       </Article>
     </Layout>
