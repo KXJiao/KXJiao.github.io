@@ -22,7 +22,7 @@ const Project4 = () => {
         <Heading size="md">Final Animation:</Heading>
         <ArticleVideo
           size="80vw"
-          src="https://www.youtube.com/embed/YROofZCpC1w"
+          src="https://www.youtube.com/embed/qpvadiKYSHo"
         />
 
         <Spacer />
@@ -145,6 +145,13 @@ const Project4 = () => {
           isExternal
         >
           Chocolate Cake from Sketchfab, by Jack Kelly
+        </Link>
+        <Link
+          href="https://apps.apple.com/us/app/ghost-trick-phantom-detective/id489113377"
+          isExternal
+        >
+          Song is 4 Minutes Before Death, from GHOST TRICK: Phantom Detective by
+          CAPCOM
         </Link>
         <Link
           href="https://apps.apple.com/us/app/ghost-trick-phantom-detective/id489113377"
