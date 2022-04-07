@@ -9,7 +9,7 @@ const Project1 = () => {
   return (
     <Layout>
       <Head>
-        <title>{userInfo.siteTitle} - Animations: Project1</title>
+        <title>{userInfo.siteTitle} - Animations: Project 1</title>
       </Head>
       <Article title="Project 1: Planet Animation" date="2022-02-17">
         <Heading size="md">Planet Tutorial Animation:</Heading>
