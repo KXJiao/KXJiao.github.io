@@ -124,9 +124,9 @@ const Project4 = () => {
         <Heading size="md">Notes</Heading>
         <Text justifySelf="start" fontSize="lg">
           I was inspired by a Rube Goldberg machine from the game Ghost Trick:
-          Phantom Detective. I had to take some creative liberties because the
-          2D physics was difficult to translate to Maya FX. Regretablly, I had
-          to cut the animation short because some items were not playing nicely
+          Phantom Detective. I had to take some creative liberties because 2D
+          physics were difficult to translate to Maya FX. Regrettably, I had to
+          cut the animation short because some items were not playing nicely
           with each other, but I will be releasing a complete version soon, and
           hopefully rendered with Arnold if my laptop can handle it (which
           history says it may not...).
