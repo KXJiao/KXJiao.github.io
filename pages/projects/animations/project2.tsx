@@ -16,7 +16,7 @@ const Project2 = () => {
   return (
     <Layout>
       <Head>
-        <title>{userInfo.siteTitle} - Animations: Project2</title>
+        <title>{userInfo.siteTitle} - Animations: Project 2</title>
       </Head>
       <Article title="Project 2: Treasure Chest" date="2022-03-08">
         <Heading size="md">Final Animation:</Heading>
