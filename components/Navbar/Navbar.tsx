@@ -15,7 +15,7 @@ import {
 import NextLink from "next/link";
 import userInfo from "../../constants/info";
 import ChickenIcon from "../ChickenIcon/ChickenIcon";
-import NavbarLink from "../NavbarLink/NavbarLink";
+import NavbarLink from "./NavbarLink";
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();

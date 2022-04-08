@@ -131,6 +131,14 @@ const Project4 = () => {
           hopefully rendered with Arnold if my laptop can handle it (which
           history says it may not...).
         </Text>
+        <Text justifySelf="start" fontSize="lg">
+          Here is a clip from Ghost Trick: Phantom Detective showing the scene I
+          was inspired by:
+        </Text>
+        <ArticleVideo
+          size="80vw"
+          src="https://www.youtube.com/embed/-VHdqAOIbc0"
+        />
         <Spacer />
 
         <Heading size="md">Credits</Heading>
@@ -145,13 +153,6 @@ const Project4 = () => {
           isExternal
         >
           Chocolate Cake from Sketchfab, by Jack Kelly
-        </Link>
-        <Link
-          href="https://apps.apple.com/us/app/ghost-trick-phantom-detective/id489113377"
-          isExternal
-        >
-          Song is 4 Minutes Before Death, from GHOST TRICK: Phantom Detective by
-          CAPCOM
         </Link>
         <Link
           href="https://apps.apple.com/us/app/ghost-trick-phantom-detective/id489113377"
