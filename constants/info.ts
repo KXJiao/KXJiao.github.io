@@ -69,6 +69,15 @@ const userInfo = {
       tags: [],
       external: false,
     },
+    {
+      imageURL: "/images/animations/project6/icon.png",
+      title: "Project 6: Final Project",
+      description: "This is it, our final battle",
+      githubLink: "",
+      deployLink: "/projects/animations/project6",
+      tags: [],
+      external: false,
+    },
   ],
   socialLinks: {
     linkedin: "https://linkedin.com/in/kxjiao",
